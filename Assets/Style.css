@@ -319,18 +319,18 @@ border: 1px solid #9cfb34;
 }
 @media (max-width: 576px) {
 .welcome-line {
- font-size: 3rem;
- line-height: 60px;
+ font-size: 2.3rem;
+ line-height: 50px;
 }
 #line1{
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #fff;
 
 }
 .big-background-text {
     position: absolute;
-    top: 14%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14vw;
@@ -341,8 +341,9 @@ border: 1px solid #9cfb34;
     z-index: -1;
     pointer-events: none;
 }
+.my-works-btn {
+bottom: 12%;
 
-   
 }
 
 @media (max-width: 991px) {
@@ -350,8 +351,8 @@ border: 1px solid #9cfb34;
  background: #333 !important;
     padding: 24px 0px;
 }
-.header{
-  z-index: 1001;
+header{
+  z-index: 1001 !important;
 }
 
 }
