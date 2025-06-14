@@ -346,6 +346,10 @@ bottom: 12%;
 
 }
 
+.scene {
+  top: -26px;
+}
+
 @media (max-width: 991px) {
 .navbar-collapse {
  background: #333 !important;
