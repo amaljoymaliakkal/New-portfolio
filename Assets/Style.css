@@ -427,12 +427,12 @@ opacity: 0.9;
     display: none;
 }
 .cube {
-  height: 180px;
+  height: 190px;
 }
-.face--front  { transform: rotateX(0deg) translateZ(90px); }
-.face--bottom { transform: rotateX(90deg) translateZ(90px); }
-.face--back   { transform: rotateX(180deg) translateZ(90px); }
-.face--top    { transform: rotateX(-90deg) translateZ(90px); }
+.face--front  { transform: rotateX(0deg) translateZ(95px); }
+.face--bottom { transform: rotateX(90deg) translateZ(95px); }
+.face--back   { transform: rotateX(180deg) translateZ(95px); }
+.face--top    { transform: rotateX(-90deg) translateZ(95px); }
 }
 
 

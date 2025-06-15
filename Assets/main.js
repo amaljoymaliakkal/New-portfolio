@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }, 1200);
 
   // Hide welcome
-  setTimeout(() => welcomeScreen?.classList.add("hidden"), 2000);
+  setTimeout(() => welcomeScreen?.classList.add("hidden"), 1800);
 
   // Show main content
   setTimeout(() => {
@@ -43,5 +43,5 @@ window.addEventListener("DOMContentLoaded", () => {
       arrows: false,
       dots: false
     });
-  }, 5000);
+  }, 2600);
 });
