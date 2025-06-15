@@ -150,7 +150,7 @@ body {
 }
 
 .gradient-text {
-  font-size: 3.6rem;
+  font-size: 3.8rem;
   font-weight: 600;
   background: linear-gradient(
     90deg,
@@ -337,10 +337,15 @@ opacity: 0.9;
   /* flex: 1 1 60%; */
 }
 
+.left h2{
+  font-size: 2rem;
+}
+
 .left p{
   padding-top: 2.8rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight:300 ;
+  opacity:0.8 ;
 }
 
 .right {
@@ -357,13 +362,13 @@ opacity: 0.9;
 .case-studies .card{
     border: 1px solid #272525;
     height: 100%;
- background: #100f0f;
+ background: unset;
 }
 
 
 .case-studies .card-body{
-  padding: 16px 24px;
-  background: #100f0f;
+  padding: 24px 0px;
+  background: #000;
 
 }
 #projects .card-title {
@@ -375,15 +380,15 @@ opacity: 0.9;
 
 .case-studies .card-text {
 
-  padding-top: 4rem;
-  font-size: 1.3rem;
+  padding-top: 2rem;
+  font-size: 1rem;
   font-weight:300 ;
    padding-top: 16px;
   opacity: 0.8 !important;
 
 }
 .case-studies img{
-  height: 260px;
+  height: 340px;
   object-fit: cover;
 }
 
@@ -417,13 +422,11 @@ opacity: 0.9;
        
   }
 
-  .scroll-area{
-    display: none;
-  }
+
   .my-info{
   height: unset;
  padding-top: 9rem;
- padding-bottom: 2rem;
+ padding-bottom: 4rem;
 }
   .banner-section {
   position: relative;
@@ -433,7 +436,7 @@ opacity: 0.9;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
   background-size: cover;
 }
 
@@ -466,15 +469,21 @@ opacity: 0.9;
     font-size: 26px;
   }
   .about-me {
-    font-size: 4rem;
-    margin-bottom: 5rem;
+        font-size: 2.3rem;
+        margin-bottom: 0rem;
+    
 }
+
+
 .cube-wrapper {
     perspective: 1000px;
     width: 88%;
     max-width: 1100px;
     padding: 0 5%;
 }
+ .scroll-area{
+    display: none;
+  }
 .face{
  padding: 14px 16px;
 }
@@ -492,11 +501,19 @@ opacity: 0.9;
 .cube {
   height: 190px;
 }
+.case-studies{
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.case-studies .case-title{
+  margin-bottom: 1.6rem !important;
+}
 .face--front  { transform: rotateX(0deg) translateZ(95px); }
 .face--bottom { transform: rotateX(90deg) translateZ(95px); }
 .face--back   { transform: rotateX(180deg) translateZ(95px); }
 .face--top    { transform: rotateX(-90deg) translateZ(95px); }
 }
+ 
 
 
 
