@@ -91,7 +91,56 @@
   </div>
 
   <!-- Dummy Sections -->
-  <section id="about" style="height:100vh;background:#222;"></section>
+<!-- About Section -->
+<!-- About Section -->
+<!-- About Section -->
+<section id="about" class="scroll-area">
+  <div class="cube-sticky d-flex flex-column align-items-center ">
+    <div id="aboutHeading" class="hidden mb-4">
+      <h2 class="text-white text-center mb-4 about-me">About me</h2>
+    
+    </div>
+
+    <div class="cube-wrapper">
+      <div class="cube hidden" id="aboutCube">
+        <div class="face face--front">
+          <div class="left">
+            <h2>Experience </h2>
+            <p>
+4+ years of experience as a UX Designer. currently works at Speridian technologies.
+</p>
+          </div>
+          <div class="right">01</div>
+        </div>
+        <div class="face face--bottom">
+          <div class="left">
+              <h2>Design Philosophy</h2>
+            <p>Empathy-driven designer focused on clarity, consistency, and solving real user problems.</p>
+          </div>
+          <div class="right">04</div>
+        </div>
+        <div class="face face--back">
+          <div class="left">
+            <h2>Skills & Tools</h2>
+            <p>Skilled in Figma, Adobe XD, UX research, wireframing, and proficient in HTML, CSS, Tailwind, React, and UX writing.</p>
+          </div>
+          <div class="right">03</div>
+        </div>
+        <div class="face face--top">
+          <div class="left">
+                <h2>Education</h2>
+            <p>Completed Master’s in Computer Application with 75% from FISAT, Angamaly.</p>
+         
+          </div>
+          <div class="right">02</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
   <section id="skills" style="height:100vh;background:#333;"></section>
   <section id="works" style="height:100vh;background:#444;"></section>
   <section id="contact" style="height:100vh;background:#555;"></section>
@@ -101,5 +150,20 @@
   <script>
     AOS.init();
   </script>
+  <script>
+  const aboutCube = document.getElementById("aboutCube");
+  const scrollContainer = document.querySelector("#about.scroll-area");
+
+  window.addEventListener("scroll", () => {
+    const rect = scrollContainer.getBoundingClientRect();
+    const total = scrollContainer.offsetHeight - window.innerHeight;
+    const scrolled = Math.min(Math.abs(rect.top), total);
+    const percent = scrolled / total;
+    const angle = percent * 270;
+
+    aboutCube.style.transform = `rotateX(${angle}deg)`;
+  });
+</script>
+
 </body>
 </html>
