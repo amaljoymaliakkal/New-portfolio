@@ -508,6 +508,10 @@ opacity: 0.9;
 .case-studies .case-title{
   margin-bottom: 1.6rem !important;
 }
+.case-studies img{
+  height: 260px;
+  object-fit: cover;
+}
 .face--front  { transform: rotateX(0deg) translateZ(95px); }
 .face--bottom { transform: rotateX(90deg) translateZ(95px); }
 .face--back   { transform: rotateX(180deg) translateZ(95px); }
