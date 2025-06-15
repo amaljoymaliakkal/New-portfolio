@@ -59,7 +59,7 @@ body {
 }
 
 .welcome-line span {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2.5rem;
 }
 
@@ -108,7 +108,7 @@ body {
   background: url(../Assets/Images/bg.png); /* Replace with your image path */
   background-size: cover;
   background-position: center;
-  opacity: 0.5; /* Adjust to your preferred transparency */
+  opacity: 0.7; /* Adjust to your preferred transparency */
   z-index: -1;
 }
 
@@ -164,7 +164,7 @@ opacity: 0.9;
 }
 .btn-success:hover {
   background-color: #ffffff;
-  color: #fff;
+  color: #000;
   border-color: rgb(51, 51, 51);
 }
 
@@ -243,7 +243,7 @@ opacity: 0.9;
   }
 
   .gradient-text {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     max-width: 100%;
     text-align: center;
     padding: 16px 10px;
@@ -262,6 +262,13 @@ opacity: 0.9;
     /* flex-direction: column; */
     text-align: center;
     padding-bottom: 16px;
+    font-size: 12px;
+    font-weight: 300;
+    gap:8px !important
+  }
+
+  .navbar-brand{
+    font-size: 26px;
   }
 }
 @media (max-width: 368px) {
