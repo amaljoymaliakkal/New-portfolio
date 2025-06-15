@@ -33,16 +33,16 @@
   </div>
 
   <!-- Welcome Message -->
-  <div class="intro-screen hidden" id="welcomeScreen">
+  <!-- <div class="intro-screen hidden" id="welcomeScreen">
     <div class="text-center">
       <div class="welcome-line" id="line2"><span>I am an</span> UX Designer</div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Banner Section -->
   <section class="banner-section hidden" id="bannerSection">
-    <header class="py-1 container fixed-top shadow ">
-      <nav class="navbar navbar-expand-lg navbar-dark container">
+    <header class="py-1 px-4 fixed-top"  id="mainHeader">
+      <nav class=" container navbar navbar-expand-lg navbar-dark container">
         <a class="navbar-brand" href="#">Amal <span>Joy</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -50,8 +50,8 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#bannerSection">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">case studies</a></li>
             <li class="nav-item"><a class="nav-link" href="#works">My Works</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
@@ -59,23 +59,24 @@
       </nav>
     </header>
 
-    <div class="container text-center d-flex flex-column justify-content-center align-items-center flex-grow-1 ">
-      <img src="Assets/Images/amal.jpg" alt="Profile" class="rounded-circle profile-img mt-3 mb-0" />
+    <div class="container text-center d-flex flex-column justify-content-center align-items-center flex-grow-1 my-info ">
+      <img src="Assets/Images/amal.jpg" alt="Profile" class="rounded-circle profile-img mb-0" />
       <h1 class="gradient-text mb-2"><span>I craft </span>Thoughtful, <span>User</span> Solutions.</h1>
       <div class="d-flex justify-content-center gap-4 mb-4 stats-row flex-wrap">
         <div><strong>4+</strong> <span>Years Experience</span> </div>
         <div><strong>10+</strong><span>Clients</span> </div>
         <div><strong>20+</strong> <span>Projects</span> </div>
       </div>
-      <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
         <a href="#works" class="btn btn-outline-light px-4" download>Download Resume</a>
         <a href="Assets/Amal_Resume.pdf" class="btn btn-success px-4" > View my works</a>
       </div>
     </div>
   </section>
+  </section>
 
   <!-- Skills Slider (Fixed Bottom) -->
-  <div class="skills-slider-wrapper">
+  <!-- <div class="skills-slider-wrapper">
     <div class="skills-slider">
       <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
         <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
@@ -88,7 +89,7 @@
     </div>
     <div class="overlay left"></div>
     <div class="overlay right"></div>
-  </div>
+  </div> -->
 
   <!-- Dummy Sections -->
 <!-- About Section -->
@@ -141,7 +142,40 @@
 
 
 
-  <section id="skills" style="height:100vh;background:#333;"></section>
+
+    <!-- Project Showcase Section -->
+<section class="container case-studies py-5" id="skill">
+  <div class="text-center mb-5">
+    <h2 class="about-me">Case studies</h2>
+
+  </div>
+
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-6">
+      <div class="card text-white h-100 shadow-sm border-0">
+        <img src="Assets/Images/mock-up-one.png" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">UX Revamp for E-commerce</h5>
+          <p class="card-text ">Redesigned the user flow and checkout experience, leading to a 25% increase in conversions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6">
+      <div class="card bg-dark text-white h-100 shadow-sm border-0">
+        <img src="Assets/Images/mock-up-two.png" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Mobile App for Fintech</h5>
+          <p class="card-text">Built a seamless onboarding and dashboard experience for a finance tracking app.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
   <section id="works" style="height:100vh;background:#444;"></section>
   <section id="contact" style="height:100vh;background:#555;"></section>
 
