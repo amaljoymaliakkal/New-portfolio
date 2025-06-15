@@ -509,7 +509,7 @@ opacity: 0.9;
   margin-bottom: 1.6rem !important;
 }
 .case-studies img{
-  height: 260px;
+  height: 220px;
   object-fit: cover;
 }
 .face--front  { transform: rotateX(0deg) translateZ(95px); }
