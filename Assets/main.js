@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     line2?.classList.add("visible");
   }, 1200);
 
-  setTimeout(() => welcomeScreen?.classList.add("hidden"), 3200);
+  setTimeout(() => welcomeScreen?.classList.add("hidden"), 2600);
 
   setTimeout(() => {
     bannerSection?.classList.remove("hidden");
