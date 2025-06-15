@@ -4,118 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amal Joy | UX Designer</title>
-  
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="Assets/Style.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-<!-- AOS JS -->
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="Assets/Style.css" />
 </head>
 <body>
 
   <!-- Wave Intro -->
   <div class="intro-screen" id="waveScreen">
     <div class="wave">👋</div>
-    <div class="welcome-text">Hi There!</div>
+    <div class="welcome-text">Hi, I am Amal Joy</div>
   </div>
 
   <!-- Welcome Message -->
   <div class="intro-screen hidden" id="welcomeScreen">
-  <div class="text-center">
-    <div class="welcome-line" id="line1">I am Amal Joy</div>
-    <div class="welcome-line" id="line2">I am an UX Designer</div>
-   
+    <div class="text-center">
+      <div class="welcome-line" id="line2"><span>I am an</span> UX Designer</div>
+    </div>
   </div>
-</div>
-
 
   <!-- Banner Section -->
-  <section class="banner-section" id="bannerSection">
-  <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white fw-bold" href="#"></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarContent"
-        aria-controls="navbarContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#works">My Works</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item "><a class="nav-link resume-btn" href="#contact">My Resume</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-
-    <!-- Marquee Section -->
-    <div class="marquee-container" id="home">
-      <div class="overlay-left"></div>
-      <div class="overlay-right"></div>
-      <div class="marquee">
-        <div class="marquee-content">
-          <span>User Research</span>
-          <span>Wireframing</span>
-          <span>Prototyping</span>
-          <span>Design Systems</span>
-          <span>Interaction Design</span>
-          <span>Accessibility</span>
-          <span>Usability Testing</span>
-          <span>Heuristic Evaluation</span>
-          <span>Information Architecture</span>
-          <span>User Flows</span> &nbsp;
+  <section class="banner-section hidden" id="bannerSection">
+    <header class="py-1 container fixed-top shadow ">
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <a class="navbar-brand" href="#">Amal <span>Joy</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#bannerSection">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#works">My Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="marquee-content">
-          <span>User Research</span>
-          <span>Wireframing</span>
-          <span>Prototyping</span>
-          <span>Design Systems</span>
-          <span>Interaction Design</span>
-          <span>Accessibility</span>
-          <span>Usability Testing</span>
-          <span>Heuristic Evaluation</span>
-          <span>Information Architecture</span>
-          <span>User Flows</span>
-        </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <!-- Cube Section -->
-    <div class="scene-wrapper">
-      <div class="scene" data-aos="fade-up" data-aos-delay="6000">
-        <div class="cube">
-          <div class="face front"><img src="Assets/Images/mock-up-one.png" alt="Front"></div>
-          <div class="face right"><img src="Assets/Images/mock-up-two.png" alt="Right"></div>
-          <div class="face back"><img src="Assets/Images/mock-up-one.png" alt="Back"></div>
-          <div class="face left"><img src="Assets/Images/mock-up-two.png" alt="Left"></div>
-        </div>
-    
+    <div class="container text-center d-flex flex-column justify-content-center align-items-center flex-grow-1 ">
+      <img src="Assets/Images/amal.jpg" alt="Profile" class="rounded-circle profile-img mt-3 mb-0" />
+      <h1 class="gradient-text mb-2"><span>I craft </span>Thoughtful, <span>User</span> Solutions.</h1>
+      <div class="d-flex justify-content-center gap-4 mb-4 stats-row flex-wrap">
+        <div><strong>4+</strong> <span>Years Experience</span> </div>
+        <div><strong>10+</strong><span>Clients</span> </div>
+        <div><strong>20+</strong> <span>Projects</span> </div>
       </div>
-          <button class="my-works-btn">View my works</button>
-      <div class="big-background-text">My Portfolio</div>
+      <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+        <a href="#works" class="btn btn-outline-light px-4" download>Download Resume</a>
+        <a href="Assets/Amal_Resume.pdf" class="btn btn-success px-4" > View my works</a>
+      </div>
     </div>
   </section>
+
+  <!-- Skills Slider (Fixed Bottom) -->
+  <div class="skills-slider-wrapper">
+    <div class="skills-slider">
+      <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+        <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+       <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+      <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+       <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+        <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+        <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+  <div><img src="Assets/Images/skill.avif" alt="UX" /></div>
+    </div>
+    <div class="overlay left"></div>
+    <div class="overlay right"></div>
+  </div>
 
   <!-- Dummy Sections -->
   <section id="about" style="height:100vh;background:#222;"></section>
@@ -123,10 +96,10 @@
   <section id="works" style="height:100vh;background:#444;"></section>
   <section id="contact" style="height:100vh;background:#555;"></section>
 
+  <!-- Scripts -->
   <script src="Assets/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
