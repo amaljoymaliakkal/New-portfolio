@@ -282,8 +282,8 @@ opacity: 0.9;
     font-size: 26px;
   }
 }
-@media (max-width: 568px) {
+/* @media (max-width: 568px) {
 .skills-slider-wrapper{
 display: none !important;
 }
-}
+} */
