@@ -249,7 +249,7 @@ opacity: 0.9;
 @media (max-width: 991px) {
   .container.text-center.d-flex.flex-column.justify-content-center.align-items-center.flex-grow-1 {
     min-height: 80vh;
-    padding: 40px 15px;
+    padding: 40px 0px;
     max-width: 100% !important;
   }
 
