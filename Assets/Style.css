@@ -422,8 +422,8 @@ opacity: 0.9;
 
 .slide {
   position: relative;
-  height: 300px;
-  width: 400px;
+  height: 280px;
+  width: 360px;
   flex-shrink: 0;
 }
 
