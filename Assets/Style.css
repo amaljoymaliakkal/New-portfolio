@@ -38,7 +38,7 @@ body {
 .cube-sticky {
   position: sticky;
   top: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #000;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -297,7 +297,7 @@ opacity: 0.9;
 .cube-sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,10 +380,10 @@ opacity: 0.9;
 
 .case-studies .card-text {
 
-  padding-top: 2rem;
+  /* padding-top: 1rem; */
   font-size: 1rem;
   font-weight:300 ;
-   padding-top: 16px;
+   /* padding-top: 16px; */
   opacity: 0.8 !important;
 
 }
@@ -391,6 +391,86 @@ opacity: 0.9;
   height: 340px;
   object-fit: cover;
 }
+
+/*image Slider css */
+
+.multi-slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  background-color: #000;
+  /* padding: 70px 0; */
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll-left 60s linear infinite;
+}
+
+.slider-track.reverse {
+  animation: scroll-right 60s linear infinite;
+}
+
+.slider-group {
+  display: flex;
+}
+
+.slide {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease;
+}
+
+.slide:hover::before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 
 /* Responsive */
 @media (max-width: 576px) {
@@ -407,7 +487,12 @@ opacity: 0.9;
     padding: 12px 16px;
   font-size: 14px;
 }
-
+.slide {
+   position: relative;
+        height: 159px;
+        width: 235px;
+    flex-shrink: 0;
+}
 
 
 }

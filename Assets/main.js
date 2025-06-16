@@ -30,17 +30,17 @@ window.addEventListener("DOMContentLoaded", () => {
     caseStudies?.classList.remove("hidden");
 
     // Init slick slider
-    $('.skills-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 0,
-      speed: 3000,
-      cssEase: 'linear',
-      infinite: true,
-      variableWidth: true,
-      arrows: false,
-      dots: false
+    $('.image-slider').slick({
+  infinite: true,
+        speed: 8000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        variableWidth: true,
+        rtl: true
     });
   }, 2600);
 
